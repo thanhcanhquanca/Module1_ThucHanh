@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Quản lý sản Phẩm </title>
+</head>
+<style>
+    body{
+        background-color: #7fd155;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+
+
+    }
+    .divsv{
+        height: 60px;
+        width: 100%;
+        font-family: Arial;
+        font-size: 28px;
+        background-color: #53a7f6;
+        text-align: center;
+        border-radius: 4px;
+        align-content: center;
+    }
+
+    .div_input{
+       height: auto;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+        align-content: center;
+        justify-content: center;
+        background-color: aquamarine;
+    }
+
+    .divshow{
+        height: 100%;
+        width: 1000px;
+        font-size: 14px;
+        background-color: #c99bfa;
+        margin-top: 40px;
+        }
+
+
+    .container {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .cssinput{
+        padding: 4px;
+        width: 300px;
+    }
+
+    .inputdaymonthyear{
+        padding: 4px;
+        width: 100px;
+        text-align: center;
+    }
+</style>
+<body>
+
+    <header>
+        <h1 style="text-align: center">Quản Lý Sinh Viên Nhập Học</h1>
+    </header>
+    <div class="div_input">
+        <div class="container">
+            <h2 style="text-align: left">Thông Tin Cá Nhân</h2>
+
+            <label for="name">
+                <h4>Họ & Tên </h4>
+            </label>
+            <input class="cssinput" type="text" id="name" placeholder="nhập họ & tên"><br><br>
+            <h4>Giới Tính </h4>
+            <label><input name="gender" value="Nam" type="radio" checked > Nam </label>
+            <label><input name="gender" value="Nữ" type="radio"> Nữ </label>
+            <label><input name="gender" value="Khác" type="radio"> Khác </label><br><br>
+
+            <h4>Ngày Tháng Năm Sinh </h4>
+            <form >
+                <label>Ngày (1-31)  </label>
+                <input class="inputdaymonthyear" type="number" id="dayInput" min="1" max="31" >
+
+                <label>Tháng (1-12)  </label>
+                <input class="inputdaymonthyear" type="number" id="monthInput" min="1" max="12" >
+
+                <label>Năm (1900-2030)  </label>
+                <input class="inputdaymonthyear" type="number" id="yearInput" min="1900" max="2030">
+
+            </form>
+
+
+
+            <label>
+                <h4>Số điện thoại</h4>
+                <input  type="number" id="numberPhone" min="0" max="12" >
+            </label>
+
+
+        </div>
+
+    </div>
+
+    <div class="divshow">
+        <table border="1">
+            <tr>
+                <th>Stt</th>
+                <th>Mã id</th>
+                <th>Họ && Tên</th>
+                <th>Giới Tính</th>
+                <th>Ngày Sinh</th>
+                <th>Số điện thoại</th>
+                <th>Học Phí</th>
+                <th>Giới Thiệu BT</th>
+                <th>Ảnh Cá Nhân</th>
+
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
