@@ -28,7 +28,7 @@ function generateRandomID(length) {
 
 function btnSave() {
     if (statusbar) {
-        const index = array_list.findIndex(function(users) {
+        const index = array_list.findIndex(function (users) {
             return users.id === idusers;
         });
 
@@ -75,8 +75,6 @@ function btnSave() {
 }
 
 
-
-
 // ham hien thi du lieu len table
 function displayProduct() {
     const content = document.getElementById("content");
@@ -115,8 +113,8 @@ function deleteProduct(id) {
         return users.id === id;
     });
 
-    if (index !== -1){
-        array_list.splice(index,1);
+    if (index !== -1) {
+        array_list.splice(index, 1);
         displayProduct();
     }
 }
@@ -124,7 +122,7 @@ function deleteProduct(id) {
 // ham edit
 
 function editProduct(id) {
-    const index = array_list.find(function(users) {
+    const index = array_list.find(function (users) {
         return users.id === id;
     });
     if (index) {
@@ -162,7 +160,7 @@ function spaceVoid() {
 
 }
 
-document.getElementById('sort_select').addEventListener('change', function() {
+document.getElementById('sort_select').addEventListener('change', function () {
     const sortOption = this.value;
 
     switch (sortOption) {
