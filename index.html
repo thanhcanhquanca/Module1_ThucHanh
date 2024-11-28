@@ -188,12 +188,12 @@
 
             <label>
                 <b>Giới Thiệu </b><br>
-               <textarea class="cssintroduce" id="introduce"></textarea>
+               <textarea class="cssintroduce" id="introduce" placeholder="giới thiệu bản thân như : sở thích,ăn uống..."></textarea>
             </label><br><br>
 
             <label>
                 <b>Link Ảnh </b>
-                <input style="height: 22px ; width: 300px ; margin-left: 10px ; padding-left: 10px; padding-right: 10px" id="linkImg" placeholder="link https://">
+                <input style="height: 22px ; width: 300px ; margin-left: 10px ; padding-left: 10px; padding-right: 10px" id="linkImg" >
             </label>
 
         </div>
@@ -202,6 +202,14 @@
             <p class="cssBtn" id="updater" onclick="btnSave()">Lưu Thông Tin </p>
         </div>
 
+    </div>
+
+    <div class="container">Sắp xếp
+    <label for="sort_select"></label>
+        <select style="width: auto; height: 26px; margin: 10px" id="sort_select">
+            <option value="a-z"> Từ A - Z</option>
+            <option value="z-a"> Từ Z - A</option>
+        </select>
     </div>
 
     <div class="divshow">
@@ -216,12 +224,12 @@
                 <th>Học Phí</th>
                 <th>Giới Thiệu BT</th>
                 <th>Ảnh Cá Nhân</th>
+                <th>TG Thực Tế</th>
                 <th>#</th>
             </tr>
             <tbody id="content"></tbody>
         </table>
     </div>
-
 
 
 <script src="management.js"></script>
